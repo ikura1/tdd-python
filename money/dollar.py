@@ -6,4 +6,5 @@
 
 
 class Dollar:
-    pass
+    def __init__(self, amount):
+        pass
