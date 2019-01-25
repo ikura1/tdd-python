@@ -9,5 +9,5 @@ class Dollar:
     def __init__(self, amount):
         pass
 
-    def times(multiplier):
+    def times(self, multiplier):
         pass
