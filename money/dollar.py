@@ -9,5 +9,4 @@ class Dollar:
         self.amount = amount
 
     def times(self, multiplier):
-        self.amount *= multiplier
-        return None
+        return Dollar(self.amount * multiplier)
