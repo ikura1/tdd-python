@@ -12,5 +12,5 @@ class Dollar:
     def times(self, multiplier):
         return Dollar(self.amount * multiplier)
 
-    def equals(self, object_):
-        return True
+    def equals(self, dollar):
+        return self.amount == dollar.amount
