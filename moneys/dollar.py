@@ -5,8 +5,8 @@
 # TODO: nullとの等価性比較
 # TODO: 他のオブジェクトとの等価性比較
 # TODO: DollarとFrancの重複
-# TODO: equalsの一般化
 # TODO: timesの一般化
+# TODO: Franc とDollarを比較する
 from moneys.money import Money
 
 
