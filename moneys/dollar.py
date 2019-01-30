@@ -7,9 +7,10 @@
 # TODO: DollarとFrancの重複
 # TODO: equalsの一般化
 # TODO: timesの一般化
+from moneys.money import Money
 
 
-class Dollar:
+class Dollar(Money):
     def __init__(self, amount):
         self.__amount = amount
 
