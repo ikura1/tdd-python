@@ -5,3 +5,6 @@ class Money:
     @property
     def amount(self):
         return self._amount
+
+    def __eq__(self, money):
+        return self.amount == money.amount

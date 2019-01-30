@@ -13,6 +13,3 @@ from moneys.money import Money
 class Dollar(Money):
     def times(self, multiplier):
         return Dollar(self.amount * multiplier)
-
-    def __eq__(self, dollar):
-        return self.amount == dollar.amount
