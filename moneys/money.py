@@ -1,7 +1,7 @@
 class Money:
     def __init__(self, amount):
-        self.__amount = amount
+        self._amount = amount
 
     @property
     def amount(self):
-        return self.__amount
+        return self._amount
