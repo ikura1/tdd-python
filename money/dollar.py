@@ -4,6 +4,7 @@
 # TODO: hashCode()
 # TODO: nullとの等価性比較
 # TODO: 他のオブジェクトとの等価性比較
+# TODO: 5CHF * 2 = 10CHF
 
 
 class Dollar:
