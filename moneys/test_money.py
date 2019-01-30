@@ -1,5 +1,5 @@
-from money.dollar import Dollar
-from money.franc import Franc
+from moneys.dollar import Dollar
+from moneys.franc import Franc
 import unittest
 
 
