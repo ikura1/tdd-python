@@ -1,3 +1,7 @@
+from moneys.dollar import Dollar
+from abc import abstractmethod
+
+
 class Money:
     def __init__(self, amount):
         self._amount = amount
@@ -8,3 +12,11 @@ class Money:
 
     def __eq__(self, money):
         return self.amount == money.amount and self.__class__ == money.__class__
+
+    @abstractmethod
+    def times(self, multiplier):
+        pass
+
+    @staticmethod
+    def dollar(amount):
+        return Dollar(amount)
