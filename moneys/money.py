@@ -1,4 +1,5 @@
 from moneys.dollar import Dollar
+from moneys.franc import Franc
 from abc import ABCMeta, abstractmethod
 
 
@@ -20,3 +21,7 @@ class Money(metaclass=ABCMeta):
     @staticmethod
     def dollar(amount):
         return Dollar(amount)
+
+    @staticmethod
+    def franc(amount):
+        return Franc(amount)
