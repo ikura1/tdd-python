@@ -6,6 +6,9 @@ class Money(metaclass=ABCMeta):
         self._amount = amount
         self._currency = None
 
+    def currency(self):
+        return self._currency
+
     @property
     def amount(self):
         return self._amount
