@@ -5,9 +5,10 @@ verify_ssl = true
 
 [dev-packages]
 prospector = "*"
-black = "*"
 mypy = "*"
 pytest = "*"
+pep8 = "*"
+black = "*"
 
 [packages]
 
