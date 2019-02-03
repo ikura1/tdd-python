@@ -24,10 +24,10 @@ class Money(metaclass=ABCMeta):
     def dollar(amount):
         from moneys.dollar import Dollar
 
-        return Dollar(amount)
+        return Dollar(amount, "USD")
 
     @staticmethod
     def franc(amount):
         from moneys.franc import Franc
 
-        return Franc(amount)
+        return Franc(amount, "CHF")
