@@ -1,11 +1,10 @@
-from moneys.dollar import Dollar
-from moneys.franc import Franc
 from abc import ABCMeta, abstractmethod
 
 
 class Money(metaclass=ABCMeta):
     def __init__(self, amount):
         self._amount = amount
+        self._currency = None
 
     @property
     def amount(self):
@@ -20,8 +19,12 @@ class Money(metaclass=ABCMeta):
 
     @staticmethod
     def dollar(amount):
+        from moneys.dollar import Dollar
+
         return Dollar(amount)
 
     @staticmethod
     def franc(amount):
+        from moneys.franc import Franc
+
         return Franc(amount)

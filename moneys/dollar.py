@@ -11,5 +11,12 @@ from moneys.money import Money
 
 
 class Dollar(Money):
+    def __init__(self, amount):
+        super().__init__(amount)
+        self._currency = "USD"
+
+    def currency(self):
+        return self._currency
+
     def times(self, multiplier):
         return Dollar(self.amount * multiplier)
