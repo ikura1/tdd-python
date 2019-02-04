@@ -1,5 +1,4 @@
 # TODO: $5 + 10 CHR = $10
-# TODO: amount を private にする
 # TODO: Moneyの丸め処理をどうする?
 # TODO: hashCode()
 # TODO: nullとの等価性比較
@@ -7,6 +6,7 @@
 # TODO: DollarとFrancの重複
 # TODO: timesの一般化
 # TODO: Franc とDollarを比較する
+# TODO: testFrancMultiplicationを削除する？
 from moneys.money import Money
 
 
