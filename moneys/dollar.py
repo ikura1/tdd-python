@@ -15,4 +15,4 @@ class Dollar(Money):
         return super().__init__(amount, currency)
 
     def times(self, multiplier):
-        return Dollar(self.amount * multiplier, self.currency)
+        return Dollar(self.amount * multiplier, self.currency())
