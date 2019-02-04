@@ -13,6 +13,3 @@ from moneys.money import Money
 class Dollar(Money):
     def __init__(self, amount, currency):
         return super().__init__(amount, currency)
-
-    def times(self, multiplier):
-        return Dollar(self.amount * multiplier, self.currency())

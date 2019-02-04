@@ -17,7 +17,7 @@ class Money:
         return self.amount == money.amount and self.currency() == money.currency()
 
     def times(self, multiplier):
-        pass
+        return Money(self.amount * multiplier, self.currency())
 
     @staticmethod
     def dollar(amount):
