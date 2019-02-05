@@ -17,6 +17,10 @@ class MoneyTest(unittest.TestCase):
         self.assertEqual("USD", Money.dollar(1).currency())
         self.assertEqual("CHF", Money.franc(1).currency())
 
+    def test_simple_addition(self):
+        sum_ = Money.dollar(5).plus(Money.dollar(5))
+        self.assertEqual(Money.dollar(10), sum_)
+
 
 if __name__ == "__main__":
     unittest.main()
