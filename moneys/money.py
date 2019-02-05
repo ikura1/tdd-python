@@ -1,5 +1,6 @@
 # TODO: $5 + 10 CHF = $10 (レートが2:1の場合)
 # TODO: Moneyの丸め処理をどうする？
+# TODO: $5 + $5 = $10
 # TODO: hashCode()
 # TODO: nullとの等価性比較
 # TODO: 他のオブジェクトとの等価性比較
@@ -22,6 +23,9 @@ class Money:
 
     def times(self, multiplier):
         return Money(self.amount * multiplier, self.currency())
+
+    def plus(self, addend):
+        return Money(self.amount + addend.amount, self.currency())
 
     @staticmethod
     def dollar(amount):
