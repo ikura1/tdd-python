@@ -1,10 +1,10 @@
-from abc import abstractmethod
-
 # TODO: $5 + 10 CHF = $10 (レートが2:1の場合)
 # TODO: Moneyの丸め処理をどうする？
 # TODO: hashCode()
 # TODO: nullとの等価性比較
 # TODO: 他のオブジェクトとの等価性比較
+
+
 class Money:
     def __init__(self, amount, currency):
         self._amount = amount
