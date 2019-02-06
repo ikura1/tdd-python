@@ -1,2 +1,4 @@
 class Expression:
-    pass
+    @staticmethod
+    def reduce(to):
+        pass
