@@ -1,4 +1,4 @@
 class Expression:
     @staticmethod
-    def reduce(to):
+    def reduce(bank, to):
         pass
