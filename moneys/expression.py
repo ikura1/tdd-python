@@ -1,5 +1,9 @@
 class Expression:
     @staticmethod
+    def times(multiplier):
+        pass
+
+    @staticmethod
     def plus(addend):
         pass
 

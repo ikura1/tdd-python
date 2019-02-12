@@ -6,6 +6,9 @@ class Sum(Expression):
         self.augend = augend
         self.addend = addend
 
+    def times(self, multiplier):
+        return Sum(self.augend.times(multiplier), self.addend.times(multiplier))
+
     def plus(self, addend):
         return Sum(self, addend)
 
