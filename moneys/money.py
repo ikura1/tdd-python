@@ -1,5 +1,4 @@
 # TODO: $5 + $5 がMoneyを返す
-# TODO: Expression.times
 
 
 from moneys.sum import Sum
