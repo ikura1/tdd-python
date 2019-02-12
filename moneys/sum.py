@@ -9,5 +9,7 @@ class Sum(Expression):
     def reduce(self, bank, to):
         from moneys.money import Money
 
-        amount = self.augend.amount + self.addend.amount
+        amount = (
+            self.augend.reduce(bank, to).amount + self.addend.reduce(bank, to).amount
+        )
         return Money(amount, to)
