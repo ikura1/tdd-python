@@ -1,12 +1,8 @@
-# TODO: $5 + 10 CHF = $10 (レートが2:1の場合)
-# TODO: Moneyの丸め処理をどうする？
-# TODO: $5 + $5 = $10
 # TODO: $5 + $5 がMoneyを返す
-# TODO: hashCode()
-# TODO: nullとの等価性比較
-# TODO: 他のオブジェクトとの等価性比較
-# TODO: Moneyを変換して換算を行う
-# TODO: Reduce(bank, String)
+# TODO: Sum.plus
+# TODO: Expression.times
+
+
 from moneys.sum import Sum
 from moneys.expression import Expression
 
