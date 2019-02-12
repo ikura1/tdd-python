@@ -7,7 +7,7 @@ class Sum(Expression):
         self.addend = addend
 
     def plus(self, addend):
-        return None
+        return Sum(self, addend)
 
     def reduce(self, bank, to):
         from moneys.money import Money
