@@ -43,3 +43,6 @@ class Money(Expression):
     @staticmethod
     def franc(amount):
         return Money(amount, "CHF")
+
+    def __repr__(self):
+        return f"{self._currency} {self._amount}"
