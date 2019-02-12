@@ -79,10 +79,6 @@ class MoneyTest(unittest.TestCase):
         result = bank.reduce(sum_, "USD")
         self.assertEqual(Money.dollar(20), result)
 
-    def test_plus_same_currency_returns_money(self):
-        sum_ = Money.dollar(1).plus(Money.dollar(1))
-        self.assertIsInstance(sum_, Money)
-
 
 if __name__ == "__main__":
     unittest.main()
