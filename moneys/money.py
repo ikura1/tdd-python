@@ -7,15 +7,18 @@ class Money(Expression):
         self._amount = amount
         self._currency = currency
 
+    def __eq__(self, money):
+        return self.amount == money.amount and self.currency() == money.currency()
+
+    def __repr__(self):
+        return f"{self._currency} {self._amount}"
+
     def currency(self):
         return self._currency
 
     @property
     def amount(self):
         return self._amount
-
-    def __eq__(self, money):
-        return self.amount == money.amount and self.currency() == money.currency()
 
     def times(self, multiplier):
         return Money(self.amount * multiplier, self.currency())
@@ -34,6 +37,3 @@ class Money(Expression):
     @staticmethod
     def franc(amount):
         return Money(amount, "CHF")
-
-    def __repr__(self):
-        return f"{self._currency} {self._amount}"
