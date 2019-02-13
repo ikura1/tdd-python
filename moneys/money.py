@@ -1,6 +1,3 @@
-# TODO: $5 + $5 がMoneyを返す
-
-
 from moneys.sum import Sum
 from moneys.expression import Expression
 
