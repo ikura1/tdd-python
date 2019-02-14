@@ -1,4 +1,3 @@
-from moneys.sum import Sum
 from moneys.expression import Expression
 
 
