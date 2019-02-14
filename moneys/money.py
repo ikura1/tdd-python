@@ -23,9 +23,6 @@ class Money(Expression):
     def times(self, multiplier):
         return Money(self.amount * multiplier, self.currency())
 
-    def plus(self, addend):
-        return Sum(self, addend)
-
     def reduce(self, bank, to):
         rate = bank.rate(self.currency(), to)
         return Money(self.amount / rate, to)

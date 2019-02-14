@@ -9,9 +9,6 @@ class Sum(Expression):
     def times(self, multiplier):
         return Sum(self.augend.times(multiplier), self.addend.times(multiplier))
 
-    def plus(self, addend):
-        return Sum(self, addend)
-
     def reduce(self, bank, to):
         from moneys.money import Money
 

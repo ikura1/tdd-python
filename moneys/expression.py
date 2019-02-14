@@ -3,9 +3,10 @@ class Expression:
     def times(multiplier):
         pass
 
-    @staticmethod
-    def plus(addend):
-        pass
+    def plus(self, addend):
+        from moneys.sum import Sum
+
+        return Sum(self, addend)
 
     @staticmethod
     def reduce(bank, to):
