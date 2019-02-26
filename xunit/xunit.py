@@ -96,6 +96,16 @@ class TestCaseTest(TestCase):
         test.run(self.result)
         assert "setUp tearDown " == test.log
 
+    def testErrorSetup(self):
+        # わからん
+        def setUp(cls):
+            raise Exception
+
+        test = WasRun("testMethod")
+        test.setUp = setUp
+        test.run(self.result)
+        assert "setUp testMethod tearDown " == test.log
+
 
 suite = TestSuite()
 suite.add(TestCaseTest("testTemplateMethod"))
@@ -104,6 +114,7 @@ suite.add(TestCaseTest("testFailedResult"))
 suite.add(TestCaseTest("testFailedResultFormatting"))
 suite.add(TestCaseTest("testSuite"))
 suite.add(TestCaseTest("testFailedTearDown"))
+suite.add(TestCaseTest("testSetupError"))
 
 result = TestResult()
 suite.run(result)
