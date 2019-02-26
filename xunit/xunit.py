@@ -91,6 +91,11 @@ class TestCaseTest(TestCase):
         suite.run(self.result)
         assert "2 run, 1 failed" == self.result.summary()
 
+    def testFailedTearDown(self):
+        test = WasRun("testBrokenMethod")
+        test.run(self.result)
+        assert "setUp tearDown " == test.log
+
 
 suite = TestSuite()
 suite.add(TestCaseTest("testTemplateMethod"))
@@ -98,6 +103,7 @@ suite.add(TestCaseTest("testResult"))
 suite.add(TestCaseTest("testFailedResult"))
 suite.add(TestCaseTest("testFailedResultFormatting"))
 suite.add(TestCaseTest("testSuite"))
+suite.add(TestCaseTest("testFailedTearDown"))
 
 result = TestResult()
 suite.run(result)
